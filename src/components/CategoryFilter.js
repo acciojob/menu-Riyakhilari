@@ -4,7 +4,11 @@ const CategoryFilter = ({ categories, filterItems }) => {
   return (
     <div>
       {categories.map((category, index) => (
-        <button key={index} onClick={() => filterItems(category)}>
+        <button 
+          key={index} 
+          id={`filter-btn-${index}`}  // Added the expected IDs
+          onClick={() => filterItems(category)}
+        >
           {category}
         </button>
       ))}
