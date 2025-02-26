@@ -6,7 +6,7 @@ const CategoryFilter = ({ categories, filterItems }) => {
       {categories.map((category, index) => (
         <button 
           key={index} 
-          id={`filter-btn-${index}`}  // Added the expected IDs
+          id={`filter-btn-${index + 1}`}  
           onClick={() => filterItems(category)}
         >
           {category}
