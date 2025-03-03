@@ -1,5 +1,9 @@
 import React from "react";
-import { useState } from "react";
+import ReactDOM from "react-dom";
+import Menu from "./Menu";
+
+ReactDOM.render(<Menu />, document.getElementById("root"));
+
 
 const MENU_DATA = [
   {
